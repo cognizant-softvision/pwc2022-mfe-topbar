@@ -5,7 +5,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 require("dotenv").config({ path: "./.env" });
 
-const { PORT } = process.env;
+const { REMOTE } = process.env;
 
 module.exports = {
   mode: "production",
@@ -15,7 +15,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: `http://localhost:${PORT}/`,
+    publicPath: REMOTE,
   },
   resolve: {
     extensions: [".jsx", ".js", ".json"],

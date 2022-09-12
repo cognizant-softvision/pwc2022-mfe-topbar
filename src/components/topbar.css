@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* background: red !important; */
 }
 .topBar {
     display: flex;
@@ -11,6 +12,7 @@
     background-color: var(-white);
     background-color: white;
     padding: 0 5%;
+    /* background: lightskyblue; */
 }
 
 .profilePictureWrapper {

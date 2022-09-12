@@ -12,7 +12,7 @@
     background-color: var(-white);
     background-color: white;
     padding: 0 5%;
-    /* background: lightskyblue; */
+    background: rgb(180, 203, 218);
 }
 
 .profilePictureWrapper {
